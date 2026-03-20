@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Sending Certificate">6693de08c3f7ba10d39d7205e40131a7</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 14:08:15</sys_created_on>
+        <sys_id>d053af18c3b33210d39d7205e40131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Sending Certificate</sys_name>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_d053af18c3b33210d39d7205e40131dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 14:08:15</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

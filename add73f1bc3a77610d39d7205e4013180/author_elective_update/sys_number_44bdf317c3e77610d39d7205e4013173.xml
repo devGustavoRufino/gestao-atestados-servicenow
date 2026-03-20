@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_1958675_envio_0_colaborador">x_1958675_envio_0_colaborador</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>COL</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-16 13:29:32</sys_created_on>
+        <sys_id>44bdf317c3e77610d39d7205e4013173</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>COL</sys_name>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name>sys_number_44bdf317c3e77610d39d7205e4013173</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-16 13:29:32</sys_updated_on>
+    </sys_number>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</application>
+        <file_path/>
+        <instance_id>8577792b2bd79e18eafcfcd2ce91bf2f</instance_id>
+        <instance_name>dev294108</instance_name>
+        <name>sys_number_44bdf317c3e77610d39d7205e4013173</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="x_1958675_envio_0_colaborador">x_1958675_envio_0_colaborador</category><maximum_digits>7</maximum_digits><number>1000</number><prefix>COL</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-16 13:29:32</sys_created_on><sys_id>44bdf317c3e77610d39d7205e4013173</sys_id><sys_mod_count>0</sys_mod_count><sys_name>COL</sys_name><sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package><sys_policy/><sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope><sys_update_name>sys_number_44bdf317c3e77610d39d7205e4013173</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-16 13:29:32</sys_updated_on></sys_number></record_update>]]></payload>
+        <payload_hash>1142048183</payload_hash>
+        <record_name>COL</record_name>
+        <reverted_from/>
+        <source>65d73f1bc3a77610d39d7205e4013187</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-16 13:29:32</sys_created_on>
+        <sys_id>88bdf317c3e77610d39d7205e40131a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cf6d669570000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-16 13:29:32</sys_updated_on>
+        <type>Number</type>
+        <update_guid>48bdf31740e7761014affb0a2a04fca1</update_guid>
+        <update_guid_history>48bdf31740e7761014affb0a2a04fca1:1142048183</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-16 14:08:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>084e296497c142c4abb9214f2d06be10</sys_id>
+        <sys_metadata>44bdf317c3e77610d39d7205e4013173</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>COL</sys_name>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_parent display_value="">b678ff5bc3a77610d39d7205e4013143</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_scope_delete display_value="">27f27aebcb9143588f15c917cb36bde4</sys_scope_delete>
+        <sys_update_name>sys_number_44bdf317c3e77610d39d7205e4013173</sys_update_name>
+        <sys_update_version display_value="sys_number_44bdf317c3e77610d39d7205e4013173">88bdf317c3e77610d39d7205e40131a2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-16 14:08:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true,no_df_join" db_object_id="39b64ce7c32b7610d39d7205e401318a" extends="sys_user" label="Supervisores" max_length="40" name="x_1958675_envio_0_supervisor" type="collection">
+        <element display="true" label="Name" mandatory="true" max_length="100" name="nam0" type="string"/>
+        <element label="Nome" max_length="40" name="nome" type="string_full_utf8"/>
+    </element>
+</database>

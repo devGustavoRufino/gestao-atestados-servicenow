@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="98a3bd3bc3273a10d39d7205e40131da" extends="task" label="Atestados" max_length="40" name="x_1958675_envio_0_atestados" type="collection">
+        <element label="Date of absence" mandatory="true" max_length="255" name="date_of_absence" type="glide_date"/>
+        <element label="Employee's name" mandatory="true" max_length="32" name="employee_s_name" reference="x_1958675_envio_0_colaborador" type="reference"/>
+        <element label="Reason for absence" mandatory="true" max_length="255" name="reason_for_absence" type="string_full_utf8"/>
+        <element label="Assigned to" mandatory="true" max_length="32" name="assigned_t0" reference="x_1958675_envio_0_supervisor" type="reference"/>
+    </element>
+</database>
