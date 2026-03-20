@@ -1,0 +1,1969 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=173379000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>notify_supervisor</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.employee_s_name.last_name","label":"Trigger - Record Created or Updated➛Atestados Record➛Employee\u0027s name➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"last_name","usedInstances":{"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":[null]}},{"name":"Created or Updated_1.current.employee_s_name.first_name","label":"Trigger - Record Created or Updated➛Atestados Record➛Employee\u0027s name➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"first_name","usedInstances":{"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":[null]}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛Atestados Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_atestados","column_name":"number","usedInstances":{"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":["ah_subject"]}},{"name":"Created or Updated_1.current.employee_s_name.email","label":"Trigger - Record Created or Updated➛Atestados Record➛Employee\u0027s name➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"email","usedInstances":{"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":["ah_to"]}},{"name":"68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.first_name","label":"3 - Update Record➛Atestados Record➛Employee\u0027s name➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"first_name","choices":[{"order":0.0}],"usedInstances":{}},{"name":"68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.email","label":"3 - Update Record➛Atestados Record➛Employee\u0027s name➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"email","choices":[{"order":0.0}],"usedInstances":{}},{"name":"Created or Updated_1.current.employee_s_name.supervisor","label":"Trigger - Record Created or Updated➛Atestados Record➛Employee\u0027s name➛Supervisor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"supervisor","choices":[{"order":0.0}],"usedInstances":{}},{"name":"Created_1.current.reason_for_absence","label":"Trigger - Record Created➛Atestados Record➛Reason for absence","reference":"","reference_display":"Reason for absence","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_1958675_envio_0_atestados","column_name":"reason_for_absence","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":[null]}},{"name":"Created_1.current.employee_s_name.email","label":"Trigger - Record Created➛Atestados Record➛Employee\u0027s name➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"email","usedInstances":{"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":["ah_to"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Atestados Record","reference":"x_1958675_envio_0_atestados","reference_display":"Atestados","type":"reference","base_type":"reference","usedInstances":{"8330fde6-c602-4618-88d1-8a84bf785a0b":["record"],"68afe953-b8f2-46b3-b154-fb6c0f4d36fa":["record"],"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":["record"],"07acfc9c-393a-47f7-b2f7-398a8d896868":["record"],"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":["record"]},"attributes":{}},{"name":"Created_1.current.employee_s_name.last_name","label":"Trigger - Record Created➛Atestados Record➛Employee\u0027s name➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"last_name","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":[null],"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":[null]}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛Atestados Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_atestados","column_name":"number","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":[null],"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":["ah_subject"]}},{"name":"8330fde6-c602-4618-88d1-8a84bf785a0b.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.employee_s_name.supervisor","label":"Trigger - Record Created➛Atestados Record➛Employee\u0027s name➛Supervisor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"supervisor","usedInstances":{"8330fde6-c602-4618-88d1-8a84bf785a0b":["approval_conditions"],"4c8dd838-3132-418a-bd9e-d48f9e23ea82":["ah_to"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Atestados Record","reference":"x_1958675_envio_0_atestados","reference_display":"Atestados","type":"reference","base_type":"reference","usedInstances":{"68afe953-b8f2-46b3-b154-fb6c0f4d36fa":["record"],"8330fde6-c602-4618-88d1-8a84bf785a0b":["record"],"07acfc9c-393a-47f7-b2f7-398a8d896868":["record"],"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":["record"]},"attributes":{}},{"name":"68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.number","label":"3 - Update Record➛Atestados Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_atestados","column_name":"number","choices":[{"order":0.0}],"usedInstances":{}},{"name":"68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record","label":"3 - Update Record➛Atestados Record","reference":"x_1958675_envio_0_atestados","reference_display":"Atestados","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.last_name","label":"3 - Update Record➛Atestados Record➛Employee\u0027s name➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"last_name","choices":[{"order":0.0}],"usedInstances":{}},{"name":"Created_1.current.employee_s_name.supervisor.email","label":"Trigger - Record Created➛Atestados Record➛Employee\u0027s name➛Supervisor➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"x_1958675_envio_0_supervisor","column_name":"email","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":["ah_to"]}},{"name":"Created_1.current.date_of_absence","label":"Trigger - Record Created➛Atestados Record➛Date of absence","reference":"","reference_display":"Date of absence","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1958675_envio_0_atestados","column_name":"date_of_absence","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":[null]}},{"name":"68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.date_of_absence","label":"3 - Update Record➛Atestados Record➛Date of absence","reference":"","reference_display":"Date of absence","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1958675_envio_0_atestados","column_name":"date_of_absence","choices":[{"order":0.0}],"usedInstances":{}},{"name":"Created_1.current.employee_s_name.first_name","label":"Trigger - Record Created➛Atestados Record➛Employee\u0027s name➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"first_name","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":[null],"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":[null]}},{"name":"Created_1.current.employee_s_name","label":"Trigger - Record Created➛Atestados Record➛Employee\u0027s name","reference":"x_1958675_envio_0_colaborador","reference_display":"Colaboradores","type":"reference","base_type":"reference","parent_table_name":"x_1958675_envio_0_atestados","column_name":"employee_s_name","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":["ah_subject",null]}}]</label_cache>
+        <master_snapshot>6f2c9398c3733210d39d7205e401310d</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Notify Supervisor</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>aaf97c74c33fb210d39d7205e401310f</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-18 14:55:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>41946ac8c37bba10d39d7205e40131bc</sys_id>
+        <sys_mod_count>88</sys_mod_count>
+        <sys_name>Notify Supervisor</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name>sys_hub_flow_41946ac8c37bba10d39d7205e40131bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:21</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>c7f97c74c33fb210d39d7205e401319a</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=41946ac8c37bba10d39d7205e40131bc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=41946ac8c37bba10d39d7205e40131bc"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1958675_envio_0_atestados">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-20 15:05:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aaf97c74c33fb210d39d7205e401310f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:21</sys_updated_on>
+        <table>x_1958675_envio_0_atestados</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>41946ac8c37bba10d39d7205e40131bc</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-20 15:05:21</sys_created_on>
+        <sys_id>eef97c74c33fb210d39d7205e4013110</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:21</sys_updated_on>
+        <trigger display_value="">aaf97c74c33fb210d39d7205e401310f</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=41946ac8c37bba10d39d7205e40131bc^sys_idNOT INeef97c74c33fb210d39d7205e4013110"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=41946ac8c37bba10d39d7205e40131bc"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=41946ac8c37bba10d39d7205e40131bc^sys_idNOT IN09946ac8c37bba10d39d7205e40131c0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>41946ac8c37bba10d39d7205e40131bc</id>
+        <name>Notify Supervisor</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-18 14:55:40</sys_created_on>
+        <sys_id>09946ac8c37bba10d39d7205e40131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-18 14:55:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=09946ac8c37bba10d39d7205e40131c0"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=41946ac8c37bba10d39d7205e40131bc^sys_idNOT IN0b94eac8c37bba10d39d7205e40131a3,5394eac8c37bba10d39d7205e40131df,c4c92024c3fb3210d39d7205e4013148"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</model>
+        <model_id>41946ac8c37bba10d39d7205e40131bc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_41946ac8c37bba10d39d7205e40131bc</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-18 14:55:48</sys_created_on>
+        <sys_id>0b94eac8c37bba10d39d7205e40131a3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:37:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0b94eac8c37bba10d39d7205e40131a3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</model>
+        <model_id>41946ac8c37bba10d39d7205e40131bc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_41946ac8c37bba10d39d7205e40131bc</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-18 14:55:48</sys_created_on>
+        <sys_id>5394eac8c37bba10d39d7205e40131df</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:37:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5394eac8c37bba10d39d7205e40131df"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</model>
+        <model_id>41946ac8c37bba10d39d7205e40131bc</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_41946ac8c37bba10d39d7205e40131bc</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 19:15:58</sys_created_on>
+        <sys_id>c4c92024c3fb3210d39d7205e4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:15:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c4c92024c3fb3210d39d7205e4013148"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=41946ac8c37bba10d39d7205e40131bc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=41946ac8c37bba10d39d7205e40131bc"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=41946ac8c37bba10d39d7205e40131bc^sys_idNOT INb903e8a4c3bb3210d39d7205e40131b6"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:46:36</sys_created_on>
+        <sys_id>b903e8a4c3bb3210d39d7205e40131b6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:18:17</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=41946ac8c37bba10d39d7205e40131bc^sys_idNOT IN1de048a0c3b73210d39d7205e40131b5,626914a0c37b3210d39d7205e401318e,7a69ffd0c3773210d39d7205e40131a8,8c604860c3b73210d39d7205e401314b,d1399060c37b3210d39d7205e40131a0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>16db8f9c-ee10-48ed-8e88-1ad542eb4872</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 16:17:29</sys_created_on>
+        <sys_id>1de048a0c3b73210d39d7205e40131b5</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:57</sys_updated_on>
+        <ui_id>ada7a909-85ad-4957-baa7-fd5a19e6c906</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1de048a0c3b73210d39d7205e40131b5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>acc6cfff-9f92-4a16-b55e-206a7c26b53a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:04:36</sys_created_on>
+        <sys_id>626914a0c37b3210d39d7205e401318e</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:58</sys_updated_on>
+        <ui_id>3bccb9f9-ef44-406b-8bfb-f1bc55366b07</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=626914a0c37b3210d39d7205e401318e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 15:44:49</sys_created_on>
+        <sys_id>7a69ffd0c3773210d39d7205e40131a8</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:57</sys_updated_on>
+        <ui_id>8330fde6-c602-4618-88d1-8a84bf785a0b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y32/aOhT+V5CfKXMICaFvVVGlXd27SW23h5UqMvZJ8WSSLE66MsT/vpPYIRm0DDYqtVd9Qfgc//jO5+/DNjdLIgU5JTDwXQ8/hpFLnb5DA/CDgI8o44HvewOXdEnM5oA9WZpmyT1TYQZMJzEmsFGUGfwqpE4VW3xuInwmlcggJqc3t12SsgxnySEjp8uN1L4wFJuCwq5nFkfnssbxJMB8kZYJnWcyvrPtf+00V3UwyUQJq98l8JBDLADxRExp6JI5iwXLk2yxjuDU4mOsmsBMxrkpeM4etPyB6zk+LTtGgCVyy8a6GVqmTDgas5whkoLnRbYmLpEctCFHQMQKlZ+3Y6bDxzSXWGQ1JGdTVY9OVDGPPxhGyHqC1sYUGkFAWlZaQrd1RFez5PtljfJCxhUpNqkSztS6xXKkblrkJZ4lKeT1BssmssUzKJjjiuEc9wkjYblZsloFQc97dwobvUgl3xGdlndxj/Gywh7uAOtdYHxchT+zTJbl/ofT4OByuU+x/FbA+1JHfn/qj2ggTkREpyeDwPVOGAd6Ar7jgSd87jkuWXWJXuhzxbRuiMIdCr8VZZmGNktQaDguh/BMpvkZgroHy8Wqa11EnagPo1GfTh1KXUoDj9PAhak79IcuE8EjIo0kKNEyUZ3YNlMrc5ip9kC1ZaoLC+spuNZSVTOsOv1qq2p854NJHN1aAaWvyVu4+N9Y63kcc7j6DQW/sQDfKTZoHSRfkyKLdzggnEldKeNJJ7R6HOaIPUDWjvjHoNw0xCb4P/GD++aH/78fhsEuqXHaSCoDjsJoGWG5PMfNz0F0kqzzKRXl19Dp8SJDxvLV6gj3rT3Q1Ua4rOFtwrXSFwkvqm2RYkP7Y5vpvB834qe7xW8kso/23f6b8l+k8rm3S1vRqJGSKJAkVHdb+xNisE/I6YTESQwT0p2QsldYaqsKYw9EuE5UseVytTKRImN2AqfVbEYLttBVT81nIAplor9Ewkr8Nn4Mv+3BSe23cQGdsSFlm6b6RVPjNLzIrWPnynaoZnp3LdvHj3e042fwmg6fv33oPN/7JVzf8NFh+EPxDA+UwU79QUts6zsWT2Ihywp0y57mnQD6Er4Cz/VZvPhys/u46sE8VckCINTV/ainC6z7XuokW61ut631DCscZtU9qFofjegw/TvqrGWbfyfsoLZdm/80bNJadXCsw/KVXRRfplePb8sp33kN4422DJuNER9CZ+QF/tALIb6XSUhDNIXOmUj0I55qpQ4zwx4AazNcW4QbgK38q+ZjD6Rq2MYDyTnwhDI+eFT2b6J/MaK//QkJxJAAdBYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7a69ffd0c3773210d39d7205e40131a8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>16db8f9c-ee10-48ed-8e88-1ad542eb4872</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 16:15:12</sys_created_on>
+        <sys_id>8c604860c3b73210d39d7205e401314b</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:57</sys_updated_on>
+        <ui_id>68afe953-b8f2-46b3-b154-fb6c0f4d36fa</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXW/aMBT9K8jPUZQQYMBbBUKa1LVS2/HSVZETX8CSE2e2Q2GI/77rxAkZ7Soq9WGVxhP30+ecnPt4IJyRKRkAC8JJOEqjMIr6QdAfD8JkFCVhn0UUICQeyWkG2KkglYphvKWitInDYaaAGmA9qXrfC2b/xqGflkpBbo5HbGVcF4Lul24CM+mGC4Z1Mn188khBFS43oMj0cFa6FJ2gCQhsvWvgncM1+8LGTKZlhrhi3iSv3eTcVXpf51jBIQsnDDwCOwM5AwSyokKDRzKaI0up9mRqVIkJ5M9uc7FvOzY8NzXRjO40/4UvDwLbtwJkljoR2jB2AtXp1Zwaeo+bU1OqVi/JU9C1JgxWtBRm1s3VDbeF4TKvRwxNRDMtRZnlN7UipF3Q+R6lRhBQWJ4WeU1rdb+Rz3cNyAXPK0kcRSFTKtqIGqN4UhoL50BAQKVxRouC5+u4UHLLq2GEkvlrgYG/EvIZ39R8nfs0tbh9VJX6C8zPq/SSKm5JfMM1OHz0iN7rmaBan6ighvHP0iKpiTkKcaVCJUFcOcEOp4oX5gqf2oIDfvSc/4P+mw6Dk6Eq2+uO/3+UQRCxly5v8+/z+gVIGq8vOAimX4HmvG4gQ0AG4hrqn3Z/cMXe0hVbx3+Y5cNRUP3+G//fNX4yfMtu6eTkrs7Ok/l3cTgZjkdfhjHkWy7jIEZLaUOZ1C8v4qpTet9RXICyOYqH6uu/jrq5i/PcdXe2d1MX3D0MP+wcxp/pEByNT38Jf/P/02+gCgQC+ggAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8c604860c3b73210d39d7205e401314b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>acc6cfff-9f92-4a16-b55e-206a7c26b53a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:03:42</sys_created_on>
+        <sys_id>d1399060c37b3210d39d7205e40131a0</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:57</sys_updated_on>
+        <ui_id>07acfc9c-393a-47f7-b2f7-398a8d896868</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXW/aMBT9K8jPUZQQYMBbBUKa1LVS2/HSVZFjX8CSE2e2Q2GI/76bxAkZ7Soq9WGVxhO+H/Y5J+c8HojgZEoGwINwEo5YFEZRPwj640GYjKIk7POIAoTEIxlNASc1MKU5nrdUFmXhcJhpoBZ4T+ne95yXf+PQZ4XWkNnjEUe5MLmk+6XbwArbCMmxT6aPTx7JqcbLLWgyPZy1LkUnaQISR+8aeOdw7T4vz1yxIkVcsWiK125z7jq9r3Ps4FIJJww8AjsLGQcEsqLSgEdSmiFLpfdkanWBBeTPbzO5byc2IrM10ZTujPiFLw+Ccm4FyIw5Edpj7ASqy6s5tfQeb2a20K1eSjAwtSYcVrSQdtat1QO3uRUqq1csTWSzrWSRZje1IqS9oPM9CoMgIC95lshrWqv7jXq+a0AuRFZJ4ihKxahsT9RaLZLClnAOBCRUGqc0z0W2jnOttqJaRiipv5Z48FdSPeObRqwzn7ISt4+qUn+B9XlVXlItShLf8BpcPnrE7M1MUmNOVFDD+GdRIqmJOQpxpUIlQVw5oVxmWuT2Cp/aggN+9Jz/g/6bDoOToSrbm47/jUXH/yiCIOLRS6+fdd/n+wtQNb5fCJDcvALT+d5CirAsxDXsP63/4Jq9pWu27v8w+4ejoPr9D8G/G4Jk+Jbd2OTkrs6dpyDs4nAyHI++DGPItkLFQYyWQv9zZV7m4qrTel8oLkDZhOKh+vqvo25ycV677u72buqGy8Pww+Iw/kxBcDQ+fRL+5v+n3wWC0M0GCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d1399060c37b3210d39d7205e40131a0"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=41946ac8c37bba10d39d7205e40131bc"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=41946ac8c37bba10d39d7205e40131bc^sys_idNOT IN463a5ce0c37b3210d39d7205e40131b3,8b29d860c37b3210d39d7205e401313b,92195860c37b3210d39d7205e401318f,bf5ff7dcc3773210d39d7205e40131ed"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">184adce0c37b3210d39d7205e40131b1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>acc6cfff-9f92-4a16-b55e-206a7c26b53a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:07</sys_created_on>
+        <sys_id>463a5ce0c37b3210d39d7205e40131b3</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:18</sys_updated_on>
+        <ui_id>de05e07b-cfbd-451b-99e3-544a9cd8060c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">144adce0c37b3210d39d7205e40131aa</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>16db8f9c-ee10-48ed-8e88-1ad542eb4872</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:03:33</sys_created_on>
+        <sys_id>8b29d860c37b3210d39d7205e401313b</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:18</sys_updated_on>
+        <ui_id>d126879b-5c60-4beb-bd95-cb289623f3b5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">504adce0c37b3210d39d7205e40131ad</block>
+        <comment/>
+        <connected_to>16db8f9c-ee10-48ed-8e88-1ad542eb4872</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:03:13</sys_created_on>
+        <sys_id>92195860c37b3210d39d7205e401318f</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:18</sys_updated_on>
+        <ui_id>acc6cfff-9f92-4a16-b55e-206a7c26b53a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7b5ff7dcc3773210d39d7205e40131ec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 16:10:49</sys_created_on>
+        <sys_id>bf5ff7dcc3773210d39d7205e40131ed</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:18</sys_updated_on>
+        <ui_id>16db8f9c-ee10-48ed-8e88-1ad542eb4872</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXW/TMBT9K8jPbeQkTcn6NoEmIQGT2LQXmKIb+6a1cOwQO+tK1f/OdT62ai0CoT3yFh/fj3PuPc6e2c43nXe39tI5tTZs9fV+xpQJGH3vmYEa2YoJa6Tyyho2Yw+gu4Dt93ma8krici6WPJkvlnE+z3MZz3PIF2X1Ns+AlxE0TWspp3AePB4O3zrOUzmgKKmeVK7RsLt75bJio7RscZTUQEtKPLZstX9x5XcNFhpK1NT9xrfKrCldSTpdQFZlMc9EmizThPMkX8TlMi3jRKaAiyXFTYnvjiZ0ZmihCUFuKm9bGbgkfMbw0aORxHlVgXY4YzUYCd62O7bybUdAiyCvjd49RWyU8VSNhdhHp35iqMR5iKyQhAkcbp+OxTjkARYbqwReNz23HvFQ6jFHWN3V5vMgIawHK+i0n9ZDSOeoHjaBdKAxcqpuNnb7ZWp4pUwvcLzUVoB+OoGnMZSdRxe2gRprKlTUtDwaThE2qPpk4lJHa02HqNJ2S02DRyMQgXhEM4LoivD3PXwHrQoqPlEZSqYNusKJVjWTtr45O/RTKX50gc+gb1RSDMOggCHtkto84Ej6MDt9C0UPPD+IUy+/kg0rDlV8IeLzNoT0nA3ffOyRUzNOrH/jyPgPjhyRv7Jklv135LEjA80SnBJF/4elcuF9/7Ml74P1hhZu8JBEoRwxuQ3Yh+kvHi52tHUljqGtbb8HDc/Y4ResQutFDwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=41946ac8c37bba10d39d7205e40131bc^sys_idNOT IN0683c424c3b73210d39d7205e4013195,1d2c9f58c3733210d39d7205e401319c,226be8a4c3fb3210d39d7205e4013130,25dfdb50c3b33210d39d7205e40131df,512c9f58c3733210d39d7205e401319d,5d2a58e4c3b73210d39d7205e40131f9,6ddfdb50c3b33210d39d7205e40131de,8283c424c3b73210d39d7205e4013194,952c9f58c3733210d39d7205e401319d,992a58e4c3b73210d39d7205e40131f8,9c6cd828c37b3210d39d7205e40131f8,addfdb50c3b33210d39d7205e40131dd,c283c424c3b73210d39d7205e4013193,ca83c424c3b73210d39d7205e4013194,d06cd828c37b3210d39d7205e40131f8,d46c9464c37b3210d39d7205e4013192,d92c9f58c3733210d39d7205e401319b,e66be8a4c3fb3210d39d7205e4013130"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 16:29:00</sys_created_on>
+        <sys_id>0683c424c3b73210d39d7205e4013195</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 16:29:00</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>31d73917-b25d-40ae-8f2e-c224f793050a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:36:54</sys_created_on>
+        <sys_id>1d2c9f58c3733210d39d7205e401319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:36:54</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9284b0a9-5234-46ae-a28b-e38f0dd1cae9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.employee_s_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 19:23:15</sys_created_on>
+        <sys_id>226be8a4c3fb3210d39d7205e4013130</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:23:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6919661b-cc83-4b82-9374-9438a45513ce</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:53:02</sys_created_on>
+        <sys_id>25dfdb50c3b33210d39d7205e40131df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:53:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>22027320-7629-477f-9c6e-2e1f71b9a99c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.employee_s_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:36:54</sys_created_on>
+        <sys_id>512c9f58c3733210d39d7205e401319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:36:54</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>facc5c96-f83a-4853-bf48-b56d725c39e0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.employee_s_name.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:07:48</sys_created_on>
+        <sys_id>5d2a58e4c3b73210d39d7205e40131f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:07:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>53cb3be5-7524-4498-b5f0-2a66306dbcf3</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.employee_s_name.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:53:02</sys_created_on>
+        <sys_id>6ddfdb50c3b33210d39d7205e40131de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:53:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9d4464f8-a115-4286-a5f5-09183c50fd7c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.date_of_absence}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 16:29:00</sys_created_on>
+        <sys_id>8283c424c3b73210d39d7205e4013194</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 16:29:00</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ff896cf2-8b00-4f39-b1a2-d98a53f61d7a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.date_of_absence}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:36:54</sys_created_on>
+        <sys_id>952c9f58c3733210d39d7205e401319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:36:54</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f188b8d6-13ec-47cd-a73e-6de5acdf2e58</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.employee_s_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:07:48</sys_created_on>
+        <sys_id>992a58e4c3b73210d39d7205e40131f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:07:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>597487db-5186-4dc6-aae7-3b57e6a85c37</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.date_of_absence}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:17:33</sys_created_on>
+        <sys_id>9c6cd828c37b3210d39d7205e40131f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:17:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>eb51b4f3-6ec5-4a2b-a620-e86cf83f2b79</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.employee_s_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:53:02</sys_created_on>
+        <sys_id>addfdb50c3b33210d39d7205e40131dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:53:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c91d2b3b-7eb7-42e8-93a3-f56c32752c73</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 16:29:00</sys_created_on>
+        <sys_id>c283c424c3b73210d39d7205e4013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 16:29:00</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>28c4fe94-3434-43b4-9c32-4a22d25f8181</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 16:29:00</sys_created_on>
+        <sys_id>ca83c424c3b73210d39d7205e4013194</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 16:29:00</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>baff7cdf-403b-4458-826e-fb369cd345f5</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:17:33</sys_created_on>
+        <sys_id>d06cd828c37b3210d39d7205e40131f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:17:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6ed30a0d-3902-44f8-bdcf-ad6819565395</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:17:33</sys_created_on>
+        <sys_id>d46c9464c37b3210d39d7205e4013192</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:17:33</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4d754bf1-b296-4185-a80e-9993851d5952</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.reason_for_absence}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:36:54</sys_created_on>
+        <sys_id>d92c9f58c3733210d39d7205e401319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:36:54</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f11e6840-2c5f-4c73-8d44-b4ad435244cb</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>41946ac8c37bba10d39d7205e40131bc</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.employee_s_name.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 19:23:15</sys_created_on>
+        <sys_id>e66be8a4c3fb3210d39d7205e4013130</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:23:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ae7e54e4-a054-48cf-bfde-70b15be921b1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=41946ac8c37bba10d39d7205e40131bc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_41946ac8c37bba10d39d7205e40131bc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-18 14:55:48</sys_created_on>
+        <sys_id>4f94eac8c37bba10d39d7205e40131da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-18 14:55:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_41946ac8c37bba10d39d7205e40131bc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 19:15:58</sys_created_on>
+        <sys_id>c4c92024c3fb3210d39d7205e401314c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:15:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_41946ac8c37bba10d39d7205e40131bc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-18 14:55:48</sys_created_on>
+        <sys_id>db94eac8c37bba10d39d7205e40131e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-18 14:55:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_41946ac8c37bba10d39d7205e40131bc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_41946ac8c37bba10d39d7205e40131bc"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>notify_supervisor</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.employee_s_name.last_name","label":"Trigger - Record Created or Updated➛Atestados Record➛Employee\u0027s name➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"last_name","usedInstances":{"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":[null]}},{"name":"Created or Updated_1.current.employee_s_name.first_name","label":"Trigger - Record Created or Updated➛Atestados Record➛Employee\u0027s name➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"first_name","usedInstances":{"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":[null]}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛Atestados Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_atestados","column_name":"number","usedInstances":{"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":["ah_subject"]}},{"name":"Created or Updated_1.current.employee_s_name.email","label":"Trigger - Record Created or Updated➛Atestados Record➛Employee\u0027s name➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"email","usedInstances":{"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":["ah_to"]}},{"name":"68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.first_name","label":"3 - Update Record➛Atestados Record➛Employee\u0027s name➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"first_name","choices":[{"order":0.0}],"usedInstances":{}},{"name":"68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.email","label":"3 - Update Record➛Atestados Record➛Employee\u0027s name➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"email","choices":[{"order":0.0}],"usedInstances":{}},{"name":"Created or Updated_1.current.employee_s_name.supervisor","label":"Trigger - Record Created or Updated➛Atestados Record➛Employee\u0027s name➛Supervisor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"supervisor","choices":[{"order":0.0}],"usedInstances":{}},{"name":"Created_1.current.reason_for_absence","label":"Trigger - Record Created➛Atestados Record➛Reason for absence","reference":"","reference_display":"Reason for absence","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"x_1958675_envio_0_atestados","column_name":"reason_for_absence","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":[null]}},{"name":"Created_1.current.employee_s_name.email","label":"Trigger - Record Created➛Atestados Record➛Employee\u0027s name➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"email","usedInstances":{"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":["ah_to"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Atestados Record","reference":"x_1958675_envio_0_atestados","reference_display":"Atestados","type":"reference","base_type":"reference","usedInstances":{"8330fde6-c602-4618-88d1-8a84bf785a0b":["record"],"68afe953-b8f2-46b3-b154-fb6c0f4d36fa":["record"],"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":["record"],"07acfc9c-393a-47f7-b2f7-398a8d896868":["record"],"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":["record"]},"attributes":{}},{"name":"Created_1.current.employee_s_name.last_name","label":"Trigger - Record Created➛Atestados Record➛Employee\u0027s name➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"last_name","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":[null],"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":[null]}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛Atestados Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_atestados","column_name":"number","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":[null],"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":["ah_subject"]}},{"name":"8330fde6-c602-4618-88d1-8a84bf785a0b.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.employee_s_name.supervisor","label":"Trigger - Record Created➛Atestados Record➛Employee\u0027s name➛Supervisor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"supervisor","usedInstances":{"8330fde6-c602-4618-88d1-8a84bf785a0b":["approval_conditions"],"4c8dd838-3132-418a-bd9e-d48f9e23ea82":["ah_to"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Atestados Record","reference":"x_1958675_envio_0_atestados","reference_display":"Atestados","type":"reference","base_type":"reference","usedInstances":{"68afe953-b8f2-46b3-b154-fb6c0f4d36fa":["record"],"8330fde6-c602-4618-88d1-8a84bf785a0b":["record"],"07acfc9c-393a-47f7-b2f7-398a8d896868":["record"],"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":["record"]},"attributes":{}},{"name":"68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.number","label":"3 - Update Record➛Atestados Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_atestados","column_name":"number","choices":[{"order":0.0}],"usedInstances":{}},{"name":"68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record","label":"3 - Update Record➛Atestados Record","reference":"x_1958675_envio_0_atestados","reference_display":"Atestados","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.last_name","label":"3 - Update Record➛Atestados Record➛Employee\u0027s name➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"last_name","choices":[{"order":0.0}],"usedInstances":{}},{"name":"Created_1.current.employee_s_name.supervisor.email","label":"Trigger - Record Created➛Atestados Record➛Employee\u0027s name➛Supervisor➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"x_1958675_envio_0_supervisor","column_name":"email","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":["ah_to"]}},{"name":"Created_1.current.date_of_absence","label":"Trigger - Record Created➛Atestados Record➛Date of absence","reference":"","reference_display":"Date of absence","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1958675_envio_0_atestados","column_name":"date_of_absence","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":[null]}},{"name":"68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.date_of_absence","label":"3 - Update Record➛Atestados Record➛Date of absence","reference":"","reference_display":"Date of absence","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1958675_envio_0_atestados","column_name":"date_of_absence","choices":[{"order":0.0}],"usedInstances":{}},{"name":"Created_1.current.employee_s_name.first_name","label":"Trigger - Record Created➛Atestados Record➛Employee\u0027s name➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"x_1958675_envio_0_colaborador","column_name":"first_name","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":[null],"3bccb9f9-ef44-406b-8bfb-f1bc55366b07":[null]}},{"name":"Created_1.current.employee_s_name","label":"Trigger - Record Created➛Atestados Record➛Employee\u0027s name","reference":"x_1958675_envio_0_colaborador","reference_display":"Colaboradores","type":"reference","base_type":"reference","parent_table_name":"x_1958675_envio_0_atestados","column_name":"employee_s_name","usedInstances":{"9c593f01-6654-4f84-b2cf-e2e8b3dc08ef":["ah_subject",null]}}]</label_cache>
+        <master>true</master>
+        <name>Notify Supervisor</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Notify Supervisor">41946ac8c37bba10d39d7205e40131bc</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:37:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6f2c9398c3733210d39d7205e401310d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:21</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=6f2c9398c3733210d39d7205e401310d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6f2c9398c3733210d39d7205e401310d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6f2c9398c3733210d39d7205e401310d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6f2c9398c3733210d39d7205e401310d^sys_idNOT INaf2c9398c3733210d39d7205e401310f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6f2c9398c3733210d39d7205e401310d</id>
+        <name>Notify Supervisor</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:37:04</sys_created_on>
+        <sys_id>af2c9398c3733210d39d7205e401310f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:37:04</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=af2c9398c3733210d39d7205e401310f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6f2c9398c3733210d39d7205e401310d^sys_idNOT IN28c96024c3fb3210d39d7205e401314b,2b2c9398c3733210d39d7205e4013144,7f2c9398c3733210d39d7205e401315b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</model>
+        <model_id>6f2c9398c3733210d39d7205e401310d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6f2c9398c3733210d39d7205e401310d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 19:16:00</sys_created_on>
+        <sys_id>28c96024c3fb3210d39d7205e401314b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:16:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=28c96024c3fb3210d39d7205e401314b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</model>
+        <model_id>6f2c9398c3733210d39d7205e401310d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6f2c9398c3733210d39d7205e401310d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:37:04</sys_created_on>
+        <sys_id>2b2c9398c3733210d39d7205e4013144</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2b2c9398c3733210d39d7205e4013144"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</model>
+        <model_id>6f2c9398c3733210d39d7205e401310d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6f2c9398c3733210d39d7205e401310d</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:37:05</sys_created_on>
+        <sys_id>7f2c9398c3733210d39d7205e401315b</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7f2c9398c3733210d39d7205e401315b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6f2c9398c3733210d39d7205e401310d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6f2c9398c3733210d39d7205e401310d"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6f2c9398c3733210d39d7205e401310d^sys_idNOT IN372c9398c3733210d39d7205e4013181"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:37:05</sys_created_on>
+        <sys_id>372c9398c3733210d39d7205e4013181</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:18:19</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=6f2c9398c3733210d39d7205e401310d^sys_idNOT IN344a1024c37b3210d39d7205e40131b0,7c4a1024c37b3210d39d7205e40131a9,b84a1024c37b3210d39d7205e40131ab,f04a1024c37b3210d39d7205e40131af,f04a1024c37b3210d39d7205e40131b2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>acc6cfff-9f92-4a16-b55e-206a7c26b53a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>344a1024c37b3210d39d7205e40131b0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:18:19</sys_updated_on>
+        <ui_id>07acfc9c-393a-47f7-b2f7-398a8d896868</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXW/aMBT9K8jPUZQQYMBbBUKa1LVS2/HSVZFjX8CSE2e2Q2GI/76bxAkZ7Soq9WGVxhO+H/Y5J+c8HojgZEoGwINwEo5YFEZRPwj640GYjKIk7POIAoTEIxlNASc1MKU5nrdUFmXhcJhpoBZ4T+ne95yXf+PQZ4XWkNnjEUe5MLmk+6XbwArbCMmxT6aPTx7JqcbLLWgyPZy1LkUnaQISR+8aeOdw7T4vz1yxIkVcsWiK125z7jq9r3Ps4FIJJww8AjsLGQcEsqLSgEdSmiFLpfdkanWBBeTPbzO5byc2IrM10ZTujPiFLw+Ccm4FyIw5Edpj7ASqy6s5tfQeb2a20K1eSjAwtSYcVrSQdtat1QO3uRUqq1csTWSzrWSRZje1IqS9oPM9CoMgIC95lshrWqv7jXq+a0AuRFZJ4ihKxahsT9RaLZLClnAOBCRUGqc0z0W2jnOttqJaRiipv5Z48FdSPeObRqwzn7ISt4+qUn+B9XlVXlItShLf8BpcPnrE7M1MUmNOVFDD+GdRIqmJOQpxpUIlQVw5oVxmWuT2Cp/aggN+9Jz/g/6bDoOToSrbm47/jUXH/yiCIOLRS6+fdd/n+wtQNb5fCJDcvALT+d5CirAsxDXsP63/4Jq9pWu27v8w+4ejoPr9D8G/G4Jk+Jbd2OTkrs6dpyDs4nAyHI++DGPItkLFQYyWQv9zZV7m4qrTel8oLkDZhOKh+vqvo25ycV677u72buqGy8Pww+Iw/kxBcDQ+fRL+5v+n3wWC0M0GCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=344a1024c37b3210d39d7205e40131b0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>7c4a1024c37b3210d39d7205e40131a9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:21</sys_updated_on>
+        <ui_id>8330fde6-c602-4618-88d1-8a84bf785a0b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y32/aOhT+V5CfKXMICaFvVVGlXd27SW23h5UqMvZJ8WSSLE66MsT/vpPYIRm0DDYqtVd9Qfgc//jO5+/DNjdLIgU5JTDwXQ8/hpFLnb5DA/CDgI8o44HvewOXdEnM5oA9WZpmyT1TYQZMJzEmsFGUGfwqpE4VW3xuInwmlcggJqc3t12SsgxnySEjp8uN1L4wFJuCwq5nFkfnssbxJMB8kZYJnWcyvrPtf+00V3UwyUQJq98l8JBDLADxRExp6JI5iwXLk2yxjuDU4mOsmsBMxrkpeM4etPyB6zk+LTtGgCVyy8a6GVqmTDgas5whkoLnRbYmLpEctCFHQMQKlZ+3Y6bDxzSXWGQ1JGdTVY9OVDGPPxhGyHqC1sYUGkFAWlZaQrd1RFez5PtljfJCxhUpNqkSztS6xXKkblrkJZ4lKeT1BssmssUzKJjjiuEc9wkjYblZsloFQc97dwobvUgl3xGdlndxj/Gywh7uAOtdYHxchT+zTJbl/ofT4OByuU+x/FbA+1JHfn/qj2ggTkREpyeDwPVOGAd6Ar7jgSd87jkuWXWJXuhzxbRuiMIdCr8VZZmGNktQaDguh/BMpvkZgroHy8Wqa11EnagPo1GfTh1KXUoDj9PAhak79IcuE8EjIo0kKNEyUZ3YNlMrc5ip9kC1ZaoLC+spuNZSVTOsOv1qq2p854NJHN1aAaWvyVu4+N9Y63kcc7j6DQW/sQDfKTZoHSRfkyKLdzggnEldKeNJJ7R6HOaIPUDWjvjHoNw0xCb4P/GD++aH/78fhsEuqXHaSCoDjsJoGWG5PMfNz0F0kqzzKRXl19Dp8SJDxvLV6gj3rT3Q1Ua4rOFtwrXSFwkvqm2RYkP7Y5vpvB834qe7xW8kso/23f6b8l+k8rm3S1vRqJGSKJAkVHdb+xNisE/I6YTESQwT0p2QsldYaqsKYw9EuE5UseVytTKRImN2AqfVbEYLttBVT81nIAplor9Ewkr8Nn4Mv+3BSe23cQGdsSFlm6b6RVPjNLzIrWPnynaoZnp3LdvHj3e042fwmg6fv33oPN/7JVzf8NFh+EPxDA+UwU79QUts6zsWT2Ihywp0y57mnQD6Er4Cz/VZvPhys/u46sE8VckCINTV/ainC6z7XuokW61ut631DCscZtU9qFofjegw/TvqrGWbfyfsoLZdm/80bNJadXCsw/KVXRRfplePb8sp33kN4422DJuNER9CZ+QF/tALIb6XSUhDNIXOmUj0I55qpQ4zwx4AazNcW4QbgK38q+ZjD6Rq2MYDyTnwhDI+eFT2b6J/MaK//QkJxJAAdBYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7c4a1024c37b3210d39d7205e40131a9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>16db8f9c-ee10-48ed-8e88-1ad542eb4872</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>b84a1024c37b3210d39d7205e40131ab</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:16:01</sys_updated_on>
+        <ui_id>68afe953-b8f2-46b3-b154-fb6c0f4d36fa</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXW/aMBT9K8jPUZQQYMBbBUKa1LVS2/HSVZETX8CSE2e2Q2GI/77rxAkZ7Soq9WGVxhP30+ecnPt4IJyRKRkAC8JJOEqjMIr6QdAfD8JkFCVhn0UUICQeyWkG2KkglYphvKWitInDYaaAGmA9qXrfC2b/xqGflkpBbo5HbGVcF4Lul24CM+mGC4Z1Mn188khBFS43oMj0cFa6FJ2gCQhsvWvgncM1+8LGTKZlhrhi3iSv3eTcVXpf51jBIQsnDDwCOwM5AwSyokKDRzKaI0up9mRqVIkJ5M9uc7FvOzY8NzXRjO40/4UvDwLbtwJkljoR2jB2AtXp1Zwaeo+bU1OqVi/JU9C1JgxWtBRm1s3VDbeF4TKvRwxNRDMtRZnlN7UipF3Q+R6lRhBQWJ4WeU1rdb+Rz3cNyAXPK0kcRSFTKtqIGqN4UhoL50BAQKVxRouC5+u4UHLLq2GEkvlrgYG/EvIZ39R8nfs0tbh9VJX6C8zPq/SSKm5JfMM1OHz0iN7rmaBan6ighvHP0iKpiTkKcaVCJUFcOcEOp4oX5gqf2oIDfvSc/4P+mw6Dk6Eq2+uO/3+UQRCxly5v8+/z+gVIGq8vOAimX4HmvG4gQ0AG4hrqn3Z/cMXe0hVbx3+Y5cNRUP3+G//fNX4yfMtu6eTkrs7Ok/l3cTgZjkdfhjHkWy7jIEZLaUOZ1C8v4qpTet9RXICyOYqH6uu/jrq5i/PcdXe2d1MX3D0MP+wcxp/pEByNT38Jf/P/02+gCgQC+ggAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b84a1024c37b3210d39d7205e40131ab"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>16db8f9c-ee10-48ed-8e88-1ad542eb4872</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>f04a1024c37b3210d39d7205e40131af</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:21</sys_updated_on>
+        <ui_id>ada7a909-85ad-4957-baa7-fd5a19e6c906</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f04a1024c37b3210d39d7205e40131af"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>acc6cfff-9f92-4a16-b55e-206a7c26b53a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>f04a1024c37b3210d39d7205e40131b2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:23:29</sys_updated_on>
+        <ui_id>3bccb9f9-ef44-406b-8bfb-f1bc55366b07</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f04a1024c37b3210d39d7205e40131b2"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6f2c9398c3733210d39d7205e401310d"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6f2c9398c3733210d39d7205e401310d^sys_idNOT IN744a1024c37b3210d39d7205e40131b6,744a1024c37b3210d39d7205e40131b9,7c4a1024c37b3210d39d7205e40131b7,fc4a1024c37b3210d39d7205e40131b3"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">144adce0c37b3210d39d7205e40131aa</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>16db8f9c-ee10-48ed-8e88-1ad542eb4872</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>744a1024c37b3210d39d7205e40131b6</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:21</sys_updated_on>
+        <ui_id>d126879b-5c60-4beb-bd95-cb289623f3b5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">184adce0c37b3210d39d7205e40131b1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>acc6cfff-9f92-4a16-b55e-206a7c26b53a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>744a1024c37b3210d39d7205e40131b9</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:21</sys_updated_on>
+        <ui_id>de05e07b-cfbd-451b-99e3-544a9cd8060c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">504adce0c37b3210d39d7205e40131ad</block>
+        <comment/>
+        <connected_to>16db8f9c-ee10-48ed-8e88-1ad542eb4872</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>7c4a1024c37b3210d39d7205e40131b7</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:21</sys_updated_on>
+        <ui_id>acc6cfff-9f92-4a16-b55e-206a7c26b53a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7b5ff7dcc3773210d39d7205e40131ec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Notify Supervisor">6f2c9398c3733210d39d7205e401310d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>fc4a1024c37b3210d39d7205e40131b3</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:21</sys_updated_on>
+        <ui_id>16db8f9c-ee10-48ed-8e88-1ad542eb4872</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJnWdDDUhXfAgcBCrQN0AS5tIGwIimbKCWqJBVHFfzvXephG7WBNmiOvZnD3eXMcCj3RLW2aa15UNfGiE1NVl+fPCJqh+HvntRQcbIiVNVMWKFq4pFnkK3D+j6L46BkPF3QNIgWyzTMFlnGwkUG2bIo32cJBIUPTaMV9uTGguX7/bc2CGI2opzhPCZMI6F7fOOxdCsk03yS1IBGJZZrsup/2xIMT72CpEzCIKFxlMZREETZMizSuAgjFgNfpjhQQsEllq5PvLhgj+0aBxmrRb2Z1h+n1vsZVJo5KlHgEf5iec2Q8qoEabhHKqgZWKU7srK6RUBzYHe17A4VW1FbnEZc7YsRP7mbFASusuSoi/Jx97DMJ49HuLwBC0ilpbbVUyndKkG5GR1hvIRW2vUpNhbcNYPKocVCIeduJduq/jyaQQ4D5itFpDVIgjdOqeM+CSnvt2r3ZWZ5K+rBlWlTKgrysAKL3hWtdXx6wiWvcFBe4YWjo7m7dTE0I5fK30hc+KVUOzzU5doH6oj7aCz4t4jfDPAjaOFUfMIx2IxZMLmhWjSztuFwsveI6cxagjFHjWhu/qN1DEfFk7Z8tMe1DIOu8eBnPsnYe+cvKh+A47M6fxGvDnMZQBle0fBymCG+FOZ3Y0bPIz3ze02uwz/kekL+KthJ8j/X/5xrR7MAI2g+fNtxnPu0vGGwn1yAx0MPZlNhkNuDwz7M/yhuo8NECXoK7ZT+7lQdsf0vnzAATZsGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6f2c9398c3733210d39d7205e401310d^sys_idNOT IN1510acecc37b3210d39d7205e401319a,28ef9f50c3b33210d39d7205e40131df,344a5024c37b3210d39d7205e4013108,384a5024c37b3210d39d7205e4013106,3b2c9398c3733210d39d7205e4013182,60ef9f50c3b33210d39d7205e40131df,772c9398c3733210d39d7205e4013182,7c4a5024c37b3210d39d7205e4013106,7c4a5024c37b3210d39d7205e4013108,8a7bace4c3fb3210d39d7205e401316c,9910acecc37b3210d39d7205e4013198,b32c9398c3733210d39d7205e4013182,b84a5024c37b3210d39d7205e4013107,c27bace4c3fb3210d39d7205e401316c,d910acecc37b3210d39d7205e4013199,ecef9f50c3b33210d39d7205e40131df,fc4a5024c37b3210d39d7205e4013107,ff2c9398c3733210d39d7205e4013181"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.date_of_absence}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:33:44</sys_created_on>
+        <sys_id>1510acecc37b3210d39d7205e401319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:33:44</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>eb51b4f3-6ec5-4a2b-a620-e86cf83f2b79</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.employee_s_name.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:53:14</sys_created_on>
+        <sys_id>28ef9f50c3b33210d39d7205e40131df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:53:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9d4464f8-a115-4286-a5f5-09183c50fd7c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.employee_s_name.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>344a5024c37b3210d39d7205e4013108</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:08:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>53cb3be5-7524-4498-b5f0-2a66306dbcf3</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.employee_s_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>384a5024c37b3210d39d7205e4013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:08:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>597487db-5186-4dc6-aae7-3b57e6a85c37</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.date_of_absence}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:37:05</sys_created_on>
+        <sys_id>3b2c9398c3733210d39d7205e4013182</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:37:05</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f188b8d6-13ec-47cd-a73e-6de5acdf2e58</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.employee_s_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:53:14</sys_created_on>
+        <sys_id>60ef9f50c3b33210d39d7205e40131df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:53:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c91d2b3b-7eb7-42e8-93a3-f56c32752c73</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.employee_s_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:37:05</sys_created_on>
+        <sys_id>772c9398c3733210d39d7205e4013182</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:37:05</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>facc5c96-f83a-4853-bf48-b56d725c39e0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>7c4a5024c37b3210d39d7205e4013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:08:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>28c4fe94-3434-43b4-9c32-4a22d25f8181</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>7c4a5024c37b3210d39d7205e4013108</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:08:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>31d73917-b25d-40ae-8f2e-c224f793050a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.employee_s_name.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 19:23:29</sys_created_on>
+        <sys_id>8a7bace4c3fb3210d39d7205e401316c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:23:29</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ae7e54e4-a054-48cf-bfde-70b15be921b1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:33:44</sys_created_on>
+        <sys_id>9910acecc37b3210d39d7205e4013198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:33:44</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4d754bf1-b296-4185-a80e-9993851d5952</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:37:05</sys_created_on>
+        <sys_id>b32c9398c3733210d39d7205e4013182</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:37:05</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9284b0a9-5234-46ae-a28b-e38f0dd1cae9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.date_of_absence}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>b84a5024c37b3210d39d7205e4013107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:08:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>ff896cf2-8b00-4f39-b1a2-d98a53f61d7a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created or Updated_1.current.employee_s_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 19:23:29</sys_created_on>
+        <sys_id>c27bace4c3fb3210d39d7205e401316c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:23:29</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6919661b-cc83-4b82-9374-9438a45513ce</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:33:44</sys_created_on>
+        <sys_id>d910acecc37b3210d39d7205e4013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:33:44</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6ed30a0d-3902-44f8-bdcf-ad6819565395</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:53:14</sys_created_on>
+        <sys_id>ecef9f50c3b33210d39d7205e40131df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:53:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>22027320-7629-477f-9c6e-2e1f71b9a99c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{68afe953-b8f2-46b3-b154-fb6c0f4d36fa.record.employee_s_name.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 18:08:18</sys_created_on>
+        <sys_id>fc4a5024c37b3210d39d7205e4013107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 18:08:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>baff7cdf-403b-4458-826e-fb369cd345f5</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6f2c9398c3733210d39d7205e401310d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.reason_for_absence}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:37:05</sys_created_on>
+        <sys_id>ff2c9398c3733210d39d7205e4013181</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:37:05</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f11e6840-2c5f-4c73-8d44-b4ad435244cb</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6f2c9398c3733210d39d7205e401310d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6f2c9398c3733210d39d7205e401310d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:37:05</sys_created_on>
+        <sys_id>7b2c9398c3733210d39d7205e4013157</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:37:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6f2c9398c3733210d39d7205e401310d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 19:16:00</sys_created_on>
+        <sys_id>e8c96024c3fb3210d39d7205e4013152</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 19:16:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6f2c9398c3733210d39d7205e401310d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:37:05</sys_created_on>
+        <sys_id>f72c9398c3733210d39d7205e4013162</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-19 13:37:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6f2c9398c3733210d39d7205e401310d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6f2c9398c3733210d39d7205e401310d"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>41946ac8c37bba10d39d7205e40131bc</sys_id>
+        <latest_snapshot>6f2c9398c3733210d39d7205e401310d</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch6-01-16-2026_02-02-2026_1554.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=41946ac8c37bba10d39d7205e40131bc^sys_idNOT IN483c9398c3733210d39d7205e4013196"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"483c9398c3733210d39d7205e4013196","name":"plan","plan_signature":null}}</plan>
+        <plan_id>41946ac8c37bba10d39d7205e40131bc</plan_id>
+        <snapshot>e71a70b4c33fb210d39d7205e40131ad</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-19 13:37:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>483c9398c3733210d39d7205e4013196</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-20 15:05:21</sys_updated_on>
+        <trigger display_value="">aaf97c74c33fb210d39d7205e401310f</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=41946ac8c37bba10d39d7205e40131bc"/>
+</record_update>

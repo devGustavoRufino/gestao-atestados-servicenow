@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>uNKG485qVMl09iyjUHHXZAMsaX56+V8JIKCuoQEZLsE=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1958675_envio_0.atestados_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>atestados_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-17 16:44:10</sys_created_on>
+        <sys_id>74d3357bc3273a10d39d7205e401317c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1958675_envio_0.atestados_user</sys_name>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name>sys_user_role_74d3357bc3273a10d39d7205e401317c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-17 16:44:10</sys_updated_on>
+    </sys_user_role>
+</record_update>

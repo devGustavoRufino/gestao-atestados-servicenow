@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="45a84cebc32b7610d39d7205e40131a6" extends="sys_user" label="Colaboradores" max_length="40" name="x_1958675_envio_0_colaborador" type="collection">
+        <element label="UserId" max_length="40" name="userid" type="string"/>
+        <element label="Name" max_length="40" name="nome" type="string_full_utf8"/>
+        <element label="Supervisor" max_length="32" name="supervisor" reference="x_1958675_envio_0_supervisor" type="reference"/>
+        <element choice="1" label="Departamento" max_length="40" name="departamento" type="choice">
+            <choice/>
+        </element>
+        <element label="Idade" max_length="40" name="idade" type="string"/>
+        <element label="Date of birth" mandatory="true" max_length="40" name="data_de_nasciment0" type="glide_date"/>
+        <element label="Data de Nascimento" max_length="40" name="data_de_nascimento" type="glide_date"/>
+        <element label="Age" max_length="40" name="idad0" read_only="true" type="integer"/>
+        <index name="index">
+            <element name="supervisor"/>
+        </index>
+    </element>
+</database>

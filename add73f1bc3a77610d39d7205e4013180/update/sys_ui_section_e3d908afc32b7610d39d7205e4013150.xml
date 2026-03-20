@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="sys_db_object" section_id="e3d908afc32b7610d39d7205e4013150" sys_domain="global" table="sys_db_object" version="3" view="Formulario_de_Colaboradores">
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>sys_db_object</caption>
+            <header>false</header>
+            <name>sys_db_object</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-16 14:22:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e3d908afc32b7610d39d7205e4013150</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_db_object</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+            <sys_update_name>sys_ui_section_e3d908afc32b7610d39d7205e4013150</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-16 14:22:45</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Formulario de Colaboradores" name="Formulario_de_Colaboradores">afd9c4afc32b7610d39d7205e4013174</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

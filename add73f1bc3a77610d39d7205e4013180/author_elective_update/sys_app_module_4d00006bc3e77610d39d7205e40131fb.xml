@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Envio de Atestados">f3adb317c3e77610d39d7205e40131bb</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Supervisors</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1958675_envio_0_supervisor</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1958675_envio_0.supervisor_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-16 13:39:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4d00006bc3e77610d39d7205e40131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Supervisors</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_update_name>sys_app_module_4d00006bc3e77610d39d7205e40131fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-16 13:39:42</sys_updated_on>
+        <timeline_page/>
+        <title>Supervisors</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</application>
+        <file_path/>
+        <instance_id>8577792b2bd79e18eafcfcd2ce91bf2f</instance_id>
+        <instance_name>dev294108</instance_name>
+        <name>sys_app_module_4d00006bc3e77610d39d7205e40131fb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Envio de Atestados">f3adb317c3e77610d39d7205e40131bb</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Supervisors</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1958675_envio_0_supervisor</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_1958675_envio_0.supervisor_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-16 13:39:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4d00006bc3e77610d39d7205e40131fb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Supervisors</sys_name><sys_overrides/><sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package><sys_policy/><sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope><sys_update_name>sys_app_module_4d00006bc3e77610d39d7205e40131fb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-16 13:39:42</sys_updated_on><timeline_page/><title>Supervisors</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1992816073</payload_hash>
+        <record_name>Supervisors</record_name>
+        <reverted_from/>
+        <source>65d73f1bc3a77610d39d7205e4013187</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-16 13:39:42</sys_created_on>
+        <sys_id>c900006bc3e77610d39d7205e40131ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cf6dfb73c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-16 13:39:42</sys_updated_on>
+        <type>Module</type>
+        <update_guid>8900006bb9e7761082fbbb6b49c8f8fe</update_guid>
+        <update_guid_history>8900006bb9e7761082fbbb6b49c8f8fe:-1992816073</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Supervisors">c2e50c67c32b7610d39d7205e40131da</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-16 14:05:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>04efb25e0c06404181818fa21dcd3be9</sys_id>
+        <sys_metadata>4d00006bc3e77610d39d7205e40131fb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Supervisors</sys_name>
+        <sys_package display_value="Envio de Atestado" source="x_1958675_envio_0">add73f1bc3a77610d39d7205e4013180</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Envio de Atestado">add73f1bc3a77610d39d7205e4013180</sys_scope>
+        <sys_scope_delete display_value="">27f27aebcb9143588f15c917cb36bde4</sys_scope_delete>
+        <sys_update_name>sys_app_module_4d00006bc3e77610d39d7205e40131fb</sys_update_name>
+        <sys_update_version display_value="sys_app_module_4d00006bc3e77610d39d7205e40131fb">c900006bc3e77610d39d7205e40131ff</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-16 14:05:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
